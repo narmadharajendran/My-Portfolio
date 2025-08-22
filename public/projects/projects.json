@@ -1,0 +1,35 @@
+{
+    "projects":[
+        {
+            "title":"Kiosk",
+            "description":"kiosk Project",
+            "image":["images/projects-images/p1.jpg","images/projects-images/p1.jpg", "images/projects-images/p1.jpg"],
+            "skills":["React", "Redux", "Html5", "sass", "javascript"]
+        },
+        {
+            "title":"Ondemand",
+            "description":"Ondemand Project",
+            "image":["images/projects-images/p1.jpg", "images/projects-images/p1.jpg", "images/projects-images/p1.jpg"],
+            "skills":["Html5", "sass", "javascript", "Redux", "React",  "ReduxToolKit"]
+        },
+        {
+            "title":"IG",
+            "description":"IG Project",
+            "image":["images/projects-images/p1.jpg", "images/projects-images/p1.jpg", "images/projects-images/p1.jpg"],
+            "skills":["Html5", "sass", "javascript"]
+        },
+        {
+            "title":"React Portfolio",
+            "description":"It is my portfolio website, Made it with React Js with Zustand and hosted it in GitHub",
+            "image":["images/projects-images/p1.jpg", "images/projects-images/p1.jpg", "images/projects-images/p1.jpg"],
+            "skills":["React", "Zustand", "Html5", "sass", "Typescript"]
+        },
+        {
+            "title":"TicTacToe",
+            "description":"It is my TicTacToe Game website, Made it with React Js and hosted it in GitHub",
+            "image":["images/projects-images/p1.jpg","images/projects-images/p1.jpg","images/projects-images/p1.jpg"],
+            "skills":["React", "Html5", "sass", "javascript"]
+        }
+        
+    ]
+}

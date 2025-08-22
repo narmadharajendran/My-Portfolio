@@ -1,38 +1,35 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  /* height: 100vh; */
+  overflow: auto;
+  scroll-behavior: smooth;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.light{
+  --font-color: #353239;
+  --font-color-1:#fff;
+  --border-color: #000;
+  --bg-color:#e9d5a1;
+  --bg-color-2:#fff;
+  --bg-color-3:#1f1f1f;
+  --home-page-icon-color: #000;
+  --card-bg-color:#fff;
+  --organic-arrow-color:#d7caaa;
+  --skill-tile-bg:rgba(248, 245, 244, .05);
+  --experience-content-card-bg:#fff;
 }
 
-.App-link {
-  color: #61dafb;
+.dark{
+  --font-color: #fff;
+  --font-color-1:#fff;
+  --border-color: #fff;
+  --bg-color: #494949;
+  --bg-color-2:#7f7f7f;
+  --bg-color-3:#1f1f1f;
+  --home-page-icon-color: #fff;
+  --card-bg-color:#6d6d6d;
+  --organic-arrow-color:#8c8c8c;
+  --skill-tile-bg:rgba(248, 245, 244, .05);
+  --experience-content-card-bg:#f8f3f3
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
