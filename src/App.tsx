@@ -7,6 +7,7 @@ import Projects from './components/projects/projects';
 import Experience from './components/experience/experience';
 import { useProjectStore } from './store/store';
 import Skills from './components/skills/skills';
+import Footer from './components/footer/footer';
 
 function App() {
   const { projects, loading, error, fetchProjects, experience } = useProjectStore();
@@ -15,6 +16,7 @@ function App() {
   const projectsRef = useRef<HTMLDivElement | null>(null);
   const experienceRef = useRef<HTMLDivElement | null>(null);
   const skillsRef = useRef<HTMLDivElement | null>(null);
+  const footerRef = useRef<HTMLDivElement | null>(null);
 
   const [activeSection, setActiveSection] = useState("home");
   const [theme, setTheme] = useState("light");
@@ -25,6 +27,7 @@ function App() {
     projects: projectsRef,
     skills: skillsRef,
     experience: experienceRef,
+    footer: footerRef
   };
 
   const handleNavigate = (id: string) => {
@@ -66,6 +69,7 @@ function App() {
       <Projects id="projects" innerRef={projectsRef} projects={projects}/>
       <Skills id="skills" innerRef = {skillsRef}/>
       <Experience id="experience" innerRef={experienceRef} experience={experience}/>
+      <Footer id="footer" innerRef={footerRef}/>
     </div>
   );
 };

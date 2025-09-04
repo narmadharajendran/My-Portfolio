@@ -1,7 +1,7 @@
 import React, { useCallback, useState } from "react"
 import "./projects.scss"
 import Card from "../card/card";
-import { Project } from "../../types";
+import { Project } from "../../types/types";
 import ProjectDetailModal from "../modal/project-detail-modal";
 
 interface projectProps {
@@ -28,7 +28,7 @@ const Projects:React.FC<projectProps> = (props) =>{
         <>
             <div className="project-container" id={id} ref={innerRef}>
                 <h1 className="heading">PROJECTS</h1>
-                <div className="project-list row g-0 row-cols-1 row-cols-xl-3 row-cols-md-2">
+                <div className="project-list row g-0 row-cols-1 row-cols-xl-3">
                     {projects.map(project => (
                         <Card cardData = {project} handleClick = {() => handleProjectClick(project)}/>
                     ))}

@@ -2,13 +2,13 @@
     "experience":[
         {
             "mainTech":"React",
-            "technologies":["Html5", "Css", "Sass", "Bootstrap", "Javascript", "Typescript", "React", "Redux","ReduxSaga", "Zustand"],
+            "technologies":["Html5", "Css", "Sass", "Bootstrap", "Javascript", "Typescript", "React", "Redux","ReduxSaga", "Zustand", "React Query", "Responsive Web Design"],
             "title":"Senior Software Analyst ",
             "years":"Nov 2020- Present",
             "company": "Agilysys"
         },
         {
-            "technologies":["Html5", "Css", "Sass", "Bootstrap", "Javascript"],
+            "technologies":["Html5", "Css", "Sass", "Bootstrap", "Javascript", "React"],
             "title":"Software engineer",
             "years":"June 2018- Aug 2020",
             "company": "Teezle"

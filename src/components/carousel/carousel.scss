@@ -22,6 +22,18 @@
       }
     }
   }
+  .carousel-item{
+      img{
+        max-height: 350px;
+    }
+  }
+}
+.carousel-control{
+  &-prev, &-next{
+    @media screen and (max-width:992px){
+      display: none;
+    }
+  }
 }
 .carousel-control-prev-icon,
 .carousel-control-next-icon {

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Carousel } from "react-bootstrap";
-import { Project } from "../../types";
+import { Project } from "../../types/types";
 import "./carousel.scss";
 
 type carouselProps = {

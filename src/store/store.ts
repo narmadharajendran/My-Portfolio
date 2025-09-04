@@ -1,5 +1,5 @@
 import {create} from "zustand"
-import { ProjectStore , TypeKeys} from "../types"
+import { ProjectStore , TypeKeys} from "../types/types"
 import { fetchData } from "../api"
 
 const initialState:Pick<ProjectStore, TypeKeys<ProjectStore>> = {
@@ -15,7 +15,6 @@ export const useProjectStore = create<ProjectStore>((set) => ({
         set({ loading: true, error: null });
         try {
             const result = await fetchData(); // API call
-            console.log(result,"result")
             if (result.isSuccess && result.response) {
             set({
                 projects: result.response.projects,

@@ -1,8 +1,8 @@
 import React, { useMemo } from "react"
-import "./experience.scss"
-import { ExperienceType } from "../../types"
-import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
+import { ExperienceType } from "../../types/types"
+import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
 import 'react-vertical-timeline-component/style.min.css';
+import "./experience.scss"
 
 interface contactProps {
     id:string,
@@ -15,24 +15,22 @@ const Experience:React.FC<contactProps> = (props) =>{
 
     const work = useMemo(()=>{
         if(experience.length){
-            let mainTech :any, tech : any
-            experience.map((exp, i) => {
+            return experience.map((exp, i) => {
+                let mainTech, tech;
                 if(exp.mainTech){
-                    mainTech = <div>{exp.mainTech}</div>
+                    mainTech = <span className="vertical-timeline-element-main-tech">{exp.mainTech}</span>
                 }
-                exp.technologies.map((technology, index)=>{
-                    tech = <div key={index}>{technology}</div>
+                tech = exp.technologies.map((technology, index)=>{
+                    return <span className="vertical-timeline-element-tech" key={index}>{technology}</span>
                 })
             return(
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work"
                     date={exp.years}
                     iconStyle={{
-                    background: "#AE944F",
-                    color: "#fff",
-                    textAlign: "center",
+                        textAlign: "center",
                     }}
-                    icon={<i className="fab fa-angular experience-icon"></i>}
+                    icon={<span className={`exp-icon icon-${exp.mainTech ? exp.mainTech.toLocaleLowerCase() : "html5"}`}></span>}
                     key={i}
                 >
                     <div style={{ textAlign: "left", marginBottom: "4px" }}>
@@ -51,36 +49,29 @@ const Experience:React.FC<contactProps> = (props) =>{
                     >
                     {exp.company}
                     </h4>
-                    <div style={{ textAlign: "left", marginTop: "15px" }}>{tech}</div>
+                    <div className="vertical-timeline-element-tech-container" style={{ textAlign: "left", marginTop: "15px" }}>{tech}</div>
                 </VerticalTimelineElement>
             );
         })
         }
-    },[]);
+        return null;
+    },[experience]);
     return(
         <div className="experience-container" id={id} ref={innerRef}>
             <h1 className="heading">EXPERIENCE</h1>
             <div className="vertical-timeline-container">
-                <div className="vertical-timeline-element">
-                    <span className="vertical-timeline-element-icon">
-                        <span className="skill-icon icon-react"></span>
-                    </span>
-                    <div className="vertical-timeline-element-content">
-                            {/* <VerticalTimeline>
-                                {work}
-                                <VerticalTimelineElement
-                                    iconStyle={{
-                                        background: "#AE944F",
-                                        color: "#fff",
-                                        textAlign: "center",
-                                    }}
-                                    icon={
-                                        <i className="fas fa-hourglass-start mx-auto experience-icon"></i>
-                                    }
-                                />
-                            </VerticalTimeline> */}
-                    </div>
-                </div>
+                <VerticalTimeline animate={true}>
+                    {work}
+                    <VerticalTimelineElement
+                        iconStyle={{
+                            textAlign: "center",
+                            fontSize:"2rem"
+                        }}
+                        icon={
+                            <span className="exp-icon icon-hourglass"></span>
+                        }
+                    />
+                </VerticalTimeline>
             </div>
         </div>
     )

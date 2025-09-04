@@ -57,6 +57,14 @@
             }
         }     
     }
+    &-toggler{
+        &:focus{
+            box-shadow: none;
+        }
+        .toggler-icon{
+        color: var(--font-color);
+    }
+    }    
     .corner {
         position: absolute;
         top: -46px;

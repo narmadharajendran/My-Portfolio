@@ -1,5 +1,5 @@
 import axios from "axios";
-import { FetchProjectsResult } from "./types";
+import { FetchProjectsResult } from "./types/types";
 
 const baseUrlForProjects = "projects/projects.json";
 const baseUrlForExperience = "experience/experience.json";
@@ -9,7 +9,6 @@ export const fetchData = async(): Promise<FetchProjectsResult> => {
     const requests = [httpClient.get(baseUrlForProjects), httpClient.get(baseUrlForExperience)];
     // const response = await httpClient.get(baseUrlForProjects);
     const res = await Promise.all(requests);
-    console.log(res,"response")
     if(res.length){
         // const hasFailedResponse = res.some((response) => !response.data.success);
         // if (!hasFailedResponse) {

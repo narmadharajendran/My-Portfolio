@@ -1,6 +1,6 @@
-import React, { useMemo } from "react";
+import React from "react";
 import "./project-detail-modal.scss";
-import { Project } from "../../types";
+import { Project } from "../../types/types";
 import CustomCarousel from "../carousel/carousel";
 
 interface modalProps {
@@ -20,7 +20,9 @@ const ProjectDetailModal : React.FC<modalProps> = (props) => {
             <div className="modal-dialog modal-lg modal-dialog-centered">
                 <div className="modal-content">
                     <div className="modal-header">  
-                        <button onClick={closeModal} type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <button onClick={closeModal} type="button" className="close-btn" data-bs-dismiss="modal" aria-label="Close">
+                            <span className="icon-close"></span>
+                        </button>
                     </div>
                     <div className="modal-body">
                         <CustomCarousel selectedProject = {selectedProject}/>
