@@ -1,9 +1,9 @@
-🌐 My Portfolio
+## 🌐 My Portfolio
 
 This is my personal portfolio website built to showcase my skills, projects, and resume in a professional way.
 The website is fully responsive and optimized for both desktop and mobile devices.
 
-🚀 Features
+## 🚀 Features
 
 📄 Showcases my resume, skills, and work experience
 
@@ -15,7 +15,7 @@ The website is fully responsive and optimized for both desktop and mobile device
 
 ☁️ Deployed and hosted on GitHub Pages
 
-🛠️ Tech Stack
+## 🛠️ Tech Stack
 
 Frontend: React.js, TypeScript, Zustand
 
@@ -23,9 +23,9 @@ Styling: CSS / TailwindCSS (if used)
 
 Hosting: GitHub Pages
 
-📌 Live Demo
+## 📌 Live Demo
 
-[![Live Demo](https://img.shields.io/badge/🚀%20Live%20Demo-Click%20Here-blue?style=for-the-badge)](https://narmadha.github.io/My-Portfolio)
+[![Live Demo](https://img.shields.io/badge/🚀%20Live%20Demo-Click%20Here-blue?style=for-the-badge)](https://narmadharajendran.github.io/My-Portfolio/)
 
 
 # How to Run
