@@ -15,7 +15,7 @@
         {
             "title":"IG",
             "description":"InfoGenesis is a POS software designed to meet the needs of your food service, restaurant, or retail business",
-            "image":["images/projects-images/Ig-home.png", "images/projects-images/ig-menu.png"],
+            "image":["images/projects-images/Ig-home.png", "images/projects-images/Ig-menu.png"],
             "skills":["Html5", "sass", "javascript"]
         },
         {
