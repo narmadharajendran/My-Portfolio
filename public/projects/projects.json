@@ -14,7 +14,7 @@
         },
         {
             "title":"IG",
-            "description":"InfoGenesis is a POS software designed to meet the needs of your food service, restaurant, or retail business",
+            "description":"InfoGenesis is a powerful Point of Sale (POS) software tailored for the food service, restaurant, and retail industries. The system supports customizable menus, multiple payment options, and efficient transaction processing. With its user-friendly interface, InfoGenesis helps businesses improve service speed, accuracy, and overall customer experience.",
             "image":["images/projects-images/Ig-home.png", "images/projects-images/Ig-menu.png"],
             "skills":["Html5", "sass", "javascript"]
         },
