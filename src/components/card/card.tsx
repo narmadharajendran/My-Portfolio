@@ -16,7 +16,9 @@ const Card : React.FC<cardProps> = (props) =>{
     return(
         <div className="card-container" onClick={handleClick}>
             <div className="card">
-                <img src={image[0]} alt="projectImages" height="230" style={{marginBottom: "0px", paddingBottom: "0px", position: "relative", width:"100%"}} />
+                <div className="card-image">
+                    <img src={process.env.PUBLIC_URL+"/"+image[0]} alt="projectImages" height="230" style={{marginBottom: "0px", paddingBottom: "0px", position: "relative", width:"100%"}} />
+                </div>
                 <h3 className="title">{title}</h3>
             </div>
         </div>

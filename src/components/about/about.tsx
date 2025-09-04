@@ -13,7 +13,7 @@ const About:React.FC<AboutProps> = (props) =>{
             <div className="about-content">
                 <div className="image-outer-container">
                     <div className="image-container">
-                        <img height="400px" src="images/profile-avatar.png" alt="Avatar placeholder"></img>
+                        <img height="400px" src={`${process.env.PUBLIC_URL}/images/profile-avatar.png`} alt="Avatar placeholder"></img>
                         <div className="skills">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 630 630" width="100" height="1em" style={{fontSize: "400%", margin: "9% 5% 0px"}}>
                             <rect width="630" height="630" fill="#f7df1e" /><path d="M423.2 492.19c13.31 21.77 30.52 37.38 61 37.38 25.63 0 41.97-12.81 41.97-30.52 0-21.2-16.75-28.72-45-41l-15.5-6.63c-44.84-19.12-74.63-43.12-74.63-93.75 0-46.68 35.53-82.3 91.13-82.3 39.53 0 67.94 13.75 88.4 49.72l-48.36 31c-10.63-19.12-22.1-26.65-39.95-26.65-18.2 0-29.74 11.54-29.74 26.65 0 18.65 11.54 26.17 38.19 37.38l15.5 6.64c52.67 22.54 82.47 45.55 82.47 97.25 0 55.84-43.88 86.35-102.75 86.35-57.6 0-94.88-27.5-112.91-63.5zm-210.73 5.25c9.38 16.64 17.88 30.73 38 30.73 19.44 0 31.77-7.63 31.77-37.25v-201h59v202c0 61.38-36.03 89.38-88.53 89.38-47.38 0-74.72-24.5-88.63-54z" fill="#000"/></svg>

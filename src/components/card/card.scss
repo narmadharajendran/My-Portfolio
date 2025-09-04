@@ -15,8 +15,14 @@
         position: relative;
         flex: 1;
         cursor: pointer;
-        width: 400px;
-        
+        &-image{
+            height: 230px;
+            width: 370px;
+
+            @media screen and (max-width:576px){
+                width: 255px;
+            }
+        }
         .title{
             text-transform: uppercase;
             letter-spacing: 3px;
