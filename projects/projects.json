@@ -19,7 +19,7 @@
             "skills":["Html5", "sass", "javascript"]
         },
         {
-            "title":"React Portfolio",
+            "title":"Portfolio",
             "description":"This is my personal portfolio website built to showcase my skills, projects, and resume. Developed using TypeScript and React.js to ensure a scalable and maintainable codebase. Implemented Zustand for efficient and lightweight state management. The application is hosted on GitHub Pages, making it easily accessible online.",
             "image":["images/projects-images/portfolio-home.png", "images/projects-images/portfolio-experience.png", "images/projects-images/portfolio-projects.png"],
             "skills":["React", "Zustand", "Html5", "sass", "Typescript"]
